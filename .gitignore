@@ -1,6 +1,6 @@
-node_modules/
-.expo/
-.expo-shared/
+CHTeConsent/node_modules/
+CHTeConsent/.expo/
+CHTeConsent/.expo-shared/
 dist/
 npm-debug.*
 *.jks
