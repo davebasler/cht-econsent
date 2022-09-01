@@ -1,17 +1,21 @@
 import React from 'react';
-import { Text, View } from 'react-native';
-import IntroForm from '../CHTeConsent/forms/IntroForm';
+import DataForm from './screens/DataForm';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {NavigationContainer} from '@react-navigation/native'
+import ConfirmScreen from "./screens/ConfirmScreen";
 
-const App = () => {
+const Stack = createNativeStackNavigator();
+
+export default function App() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-      }}>
-      <IntroForm></IntroForm>
-    </View>
+    <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName='DataForm'
+        >
+          <Stack.Screen name={"DataForm"} component={DataForm}/>
+          <Stack.Screen name={"ConfirmScreen"} component={ConfirmScreen}/>
+        </Stack.Navigator>
+    </NavigationContainer>
+
   )
 }
-export default App;
