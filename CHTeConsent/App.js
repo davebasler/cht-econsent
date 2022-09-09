@@ -6,7 +6,7 @@ import {
   DataCollectionScreen,
   DataForm,
   DataSecurityScreen,
-  MoreInformationScreen, SignatureScreen,
+  MoreInformationScreen, SignatureView,
   WelcomeScreen
 } from "./screens";
 
@@ -16,7 +16,7 @@ export default function App() {
   return (
     <NavigationContainer>
         <Stack.Navigator
-          initialRouteName='DataForm'
+          initialRouteName='Signature'
           screenOptions={{
             headerShown: false
           }}
@@ -28,7 +28,7 @@ export default function App() {
           <Stack.Screen name={"DataCollection"} component={DataCollectionScreen}/>
           <Stack.Screen name={"DataSecurity"} component={DataSecurityScreen}/>
           <Stack.Screen name={"Consent"} component={ConsentScreen}/>
-          <Stack.Screen name={"Signature"} component={SignatureScreen}/>
+          <Stack.Screen name={"Signature"} component={SignatureView}/>
         </Stack.Navigator>
     </NavigationContainer>
 

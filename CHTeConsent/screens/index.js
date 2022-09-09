@@ -5,7 +5,7 @@ import MoreInformationScreen from "./MoreInformationScreen";
 import DataCollectionScreen from "./DataCollectionScreen";
 import DataSecurityScreen from "./DataSecurityScreen";
 import ConsentScreen from "./ConsentScreen";
-import SignatureScreen from "./SignatureScreen";
+import SignatureView from "./SignatureView";
 
 export {
   ConfirmScreen,
@@ -15,5 +15,5 @@ export {
   DataCollectionScreen,
   DataSecurityScreen,
   ConsentScreen,
-  SignatureScreen
+  SignatureView
 };
